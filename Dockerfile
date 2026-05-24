@@ -5,6 +5,9 @@ ENV COREPACK_ENABLE_STRICT=0
 
 RUN npm install -g npm@latest
 
+COPY package.json ./
+RUN npm install --legacy-peer-deps
+
 COPY . .
 
 WORKDIR /app/web
