@@ -38,10 +38,10 @@
     "bun": "1.3.11"
   },
   "dependencies": {
-    "@codebuff/billing": "workspace:*",
-    "@codebuff/common": "workspace:*",
-    "@codebuff/internal": "workspace:*",
-    "@codebuff/sdk": "workspace:*",
+    "@codebuff/billing": "file:../packages/billing",
+    "@codebuff/common": "file:../common",
+    "@codebuff/internal": "file:../packages/internal",
+    "@codebuff/sdk": "file:../sdk",
     "@hookform/resolvers": "^3.9.0",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",

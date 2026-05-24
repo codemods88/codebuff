@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "@ai-sdk/openai-compatible": "^1.0.19",
-    "@codebuff/bigquery": "workspace:*",
-    "@codebuff/common": "workspace:*"
+    "@codebuff/bigquery": "file:../packages/bigquery",
+    "@codebuff/common": "file:../common"
   },
   "devDependencies": {}
 }
