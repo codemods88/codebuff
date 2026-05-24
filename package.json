@@ -6,7 +6,6 @@
   "type": "module",
   "workspaces": [
     "common",
-    "web",
     "freebuff",
     "freebuff/web",
     "packages/*",
