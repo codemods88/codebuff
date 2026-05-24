@@ -9,9 +9,10 @@ RUN npm install
 COPY . .
 
 WORKDIR /app/web
+RUN npm install
 RUN npx next build
 WORKDIR /app
 
 EXPOSE 3000
 WORKDIR /app/web
-CMD ["npx", "next", "start"]
+CMD ["node", "node_modules/.bin/next", "start"]
