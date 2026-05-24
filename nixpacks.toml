@@ -1,9 +1,12 @@
-[phases.install]
+[phases.setup]
 nixPkgs = ["bun"]
-cmds = ["bun install"]
+cmd = ""
+
+[phases.install]
+cmd = "bun install"
 
 [phases.build]
-cmds = ["bun --cwd web build"]
+cmd = "bun --cwd web build"
 
 [start]
 cmd = "bun --cwd web start"
