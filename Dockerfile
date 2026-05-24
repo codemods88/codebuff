@@ -8,7 +8,10 @@ RUN npm install
 
 COPY . .
 
-RUN npx --prefix web next build
+WORKDIR /app/web
+RUN npx next build
+WORKDIR /app
 
 EXPOSE 3000
-CMD ["npx", "--prefix", "web", "next", "start"]
+WORKDIR /app/web
+CMD ["npx", "next", "start"]
