@@ -1,6 +1,8 @@
 FROM node:22-slim
 WORKDIR /app
 
+ENV COREPACK_ENABLE_STRICT=0
+
 RUN npm install -g npm@latest
 
 COPY . .
