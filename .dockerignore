@@ -1,0 +1,16 @@
+node_modules
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+bun.lock
+.next
+dist
+dev
+*.tsbuildinfo
+__pycache__
+*.pyc
+.pytest_cache
+**/.git
+**/node_modules

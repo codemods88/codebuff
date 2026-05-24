@@ -7,10 +7,8 @@ RUN npm install -g npm@latest
 
 COPY . .
 
-RUN npm install
-
 WORKDIR /app/web
-RUN npm install
+RUN npm install --legacy-peer-deps
 RUN npx next build
 
 EXPOSE 3000
