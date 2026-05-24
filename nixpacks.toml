@@ -1,0 +1,9 @@
+[phases.install]
+nixPkgs = ["bun"]
+cmds = ["bun install"]
+
+[phases.build]
+cmds = ["bun --cwd web build"]
+
+[start]
+cmd = "bun --cwd web start"
